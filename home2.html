@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- recruiter view -->
+<head>
+  <title>Letshire</title>
+  <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="css/letshire.css" rel="stylesheet"/>
+  <link href="jquery/themes/start/jquery-ui.css" rel="stylesheet"/>
+  <script src="jquery/jquery-1.10.2.js"></script>
+  <script src="jquery/ui/jquery.ui.core.js"></script>
+  <script src="jquery/ui/jquery.ui.widget.js"></script>
+  <script src="jquery/ui/jquery.ui.mouse.js"></script>
+  <script src="jquery/ui/jquery.ui.button.js"></script>
+  <script src="jquery/ui/jquery.ui.draggable.js"></script>
+  <script src="jquery/ui/jquery.ui.position.js"></script>
+  <script src="jquery/ui/jquery.ui.resizable.js"></script>    
+  <script src="jquery/ui/jquery.ui.dialog.js"></script>
+  <script src="jquery/ui/jquery.ui.effect.js"></script>
+  <script src="js/letshire.js"></script>
+
+  <script>
+
+    $(function() {
+      $("#resume-dialog").dialog({
+        autoOpen: false,
+        height: 450,
+        width: 400,
+        title: "Add Resume",
+        modal: true
+      });
+
+      $("#recommend-dialog").dialog({
+        autoOpen: false,
+        height: 350,
+        width: 400,
+        title: "Recommend Candidate",
+        modal: true
+      });
+
+    });
+
+  </script>
+
+</head>
+
+<body class="grey">
+
+  <div class="navbar navbar-default navbar-static-top">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Letshire!</a>
+    </div>
+
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <a class="gauge" href="">
+          <div class="key">RESUMES</div>
+          <div class="value">2,304</div>
+        </a>
+        <a class="gauge" href="">
+          <div class="key">HIRED</div>
+          <div class="value">203</div>
+        </a>
+        <a class="gauge" href="">
+          <div class="key">OPEN</div>
+          <div class="value">12</div>
+        </a>
+
+        <button class="btn btn-primary btn-lg pull-right" onclick="resumeDialog(); return false;">Add Resume</button>
+
+      </div>
+    </div>
+
+    <br><br>
+
+    <button class="btn btn-default btn-md" onclick="recommendDialog(); return false;">Recommend</button>
+    <br><br>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="nav nav-tabs">
+          <li><a href="home3.html">Open</a></li>
+          <li class="active"><a href="home2.html">Resumes</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <table class="table table-striped table-hover">
+        <th></th>
+        <th>Candidate</th>
+        <th>Company</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Created</th>
+        <th>Status</th>
+        <th>Rating</th>
+        <th></th>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Jane Doe</td>
+          <td>Cisco</td>
+          <td><a href="mailto:doe@yahoo.com">doe@yahoo.com</a></td>
+          <td>+1 605 235 2352</td>
+          <td>Jan 12, 2011</td>
+          <td>Reserved by Figo Feng</td>
+          <td><button class="btn btn-warning btn-xs">6.2</button></td>
+          <td>
+            <a href=""><img src="images/glyphicons_030_pencil.png"></a>
+            <a href=""><img src="images/glyphicons_062_paperclip.png"></a>
+            <a href=""><img src="images/glyphicons_244_conversation.png"></a>
+            <!--<a href=""><img src="images/glyphicons_071_book.png"></a>-->
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>John Smith</td>
+          <td></td>
+          <td><a href="mailto:smith@westin.com">smith@westin.com</a></td>
+          <td>+86 132 2353 4230</td>
+          <td>Apr 23, 2004</td>
+          <td>-</td>
+          <td><button class="btn btn-danger btn-xs">4.8</button></td>
+          <td>
+            <a href=""><img src="images/glyphicons_030_pencil.png"></a>
+            <a href=""><img src="images/glyphicons_062_paperclip.png"></a>
+            <a href=""><img src="images/glyphicons_244_conversation.png"></a>
+            <!--<a href=""><img src="images/glyphicons_071_book.png"></a>-->
+          </td>
+        </tr>
+      </table>
+
+    </div>
+
+  </div>
+
+  <div id="resume-dialog">
+    <div class="form-group col-md-8">
+      <label class="label-control">Full Name</label>
+      <input class="form-control" id="fullname" placeholder="Full Name">
+    </div>
+    <div class="form-group col-md-10">
+      <label class="label-control">Email</label>
+      <input class="form-control" type="email" id="email" placeholder="Email">
+    </div>
+    <div class="form-group col-md-10">
+      <label class="label-control">Mobile</label>
+      <input class="form-control" type="mobile" id="mobile" placeholder="Mobile">
+    </div>
+    <div class="form-group col-md-10">
+      <input class="form-control" type="file" id="file">
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-primary btn-lg">Upload</button>
+    </div>
+  </div>
+
+  <div id="recommend-dialog">
+
+    <div class="form-group col-md-10">
+      <label class="label-control">Manager</label>
+      <select class="form-control" multiple>
+        <option>Li Fang</option>
+        <option>Jake Li</option>
+      </select>
+    </div>
+
+    <div class="col-md-4">
+      <button class="btn btn-primary btn-lg">Recommend</button>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+

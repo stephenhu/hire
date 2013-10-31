@@ -1,0 +1,96 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  height: auto;
+}
+
+a, a:hover, a:visited, a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #003366;
+}
+
+/* custom */
+
+.gauge {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin-right: 1px;
+  display: block;
+  float: left;
+  //border: 1px solid #3973ac;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+}
+
+.gauge:hover {
+  background-color: #336699;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 1px;
+  color: #282828;
+}
+
+.key {
+  //color: #bbc8c8;
+  //color: #3973ac;
+  color: #bbbbbb;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 1px;
+}
+
+.bg {
+  padding: 0px;
+  margin: 0px;
+  font-size: 72px;
+}
+
+.hk {
+  background: url("../images/hk.jpg");
+  -webkit-background-size: cover;
+}
+
+.hoffman {
+  background: url("../images/hoffman.png") repeat;
+}
+
+.grey {
+  background: url("../images/grey.png") repeat;
+}
+
+.grad {
+  background: -webkit-linear-gradient( top, #005994, #336699 ) repeat-y;
+  -webkit-background-size: cover;
+}
+
+/* bootstrap overrides */
+
+.navbar {
+  background-color: #3973ac;
+  opacity: 1;
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #00ff00;
+}
+
+.navbar-nav {
+  //background-color: #003366;
+}
+
+.jumbotron {
+  background-color: #333333;
+  color: #ffffff;
+  opacity: .8;
+}
+
