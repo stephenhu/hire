@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- manager view -->
+<head>
+  <title>Letshire</title>
+  <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="css/letshire.css" rel="stylesheet"/>
+  <link href="jquery/themes/start/jquery-ui.css" rel="stylesheet"/>
+  <script src="jquery/jquery-1.10.2.js"></script>
+  <script src="jquery/ui/jquery.ui.core.js"></script>
+  <script src="jquery/ui/jquery.ui.widget.js"></script>
+  <script src="jquery/ui/jquery.ui.mouse.js"></script>
+  <script src="jquery/ui/jquery.ui.button.js"></script>
+  <script src="jquery/ui/jquery.ui.draggable.js"></script>
+  <script src="jquery/ui/jquery.ui.position.js"></script>
+  <script src="jquery/ui/jquery.ui.resizable.js"></script>    
+  <script src="jquery/ui/jquery.ui.dialog.js"></script>
+  <script src="jquery/ui/jquery.ui.effect.js"></script>
+  <script src="js/letshire.js"></script>
+
+  <script>
+
+    $(function() {
+      $("#resume-dialog").dialog({
+        autoOpen: false,
+        height: 450,
+        width: 400,
+        title: "Add Resume",
+        modal: true
+      });
+
+      $("#recommend-dialog").dialog({
+        autoOpen: false,
+        height: 275,
+        width: 400,
+        title: "Recommend Candidate",
+        modal: true
+      });
+
+      $("#reserve-dialog").dialog({
+        autoOpen: false,
+        height: 230,
+        width: 400,
+        title: "Warning",
+        modal: true
+      });
+
+    });
+
+  </script>
+
+</head>
+
+<body class="grey">
+
+  <div class="navbar navbar-default navbar-static-top">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Letshire!</a>
+    </div>
+
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="">Summary</a></li>
+          <li><a href="">Openings</a></li>
+          <li><a href="">Resumes</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row req">
+
+      <h2><a href="">Nimbus Sr. MTS</a> <span class="badge">6</span></h2>
+
+      <div class="col-md-4">
+
+        <h4>Closed</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 20%"></div>
+          <span class="ptext">2</span>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <h4>Pipeline</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-primary" style="width: 10%"></div>
+          <span class="ptext">9</span>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <h4>Rejected</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger" style="width: 10%"></div>
+          <span class="ptext">3</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row req">
+
+      <h2>Nimbus Manager <span class="badge">1</span></h2>
+
+      <div class="col-md-4">
+
+        <h4>Closed</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 0%"></div>
+          <span class="ptext">0</span>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <h4>Pipeline</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
+          <span class="ptext">3</span>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <h4>Rejected</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger" style="width: 50%"></div>
+          <span class="ptext">5</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row req">
+
+      <h2>BMS Manager <span class="badge">1</span></h2>
+
+      <div class="col-md-4">
+
+        <h4>Closed</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 0%"></div>
+          <span class="ptext">0</span>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <h4>Pipeline</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-primary" style="width: 10%"></div>
+          <span class="ptext">1</span>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <h4>Rejected</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger" style="width: 80%"></div>
+          <span class="ptext">8</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="resume-dialog">
+    <div class="form-group col-md-8">
+      <label class="label-control">Full Name</label>
+      <input class="form-control" id="fullname" placeholder="Full Name">
+    </div>
+    <div class="form-group col-md-10">
+      <label class="label-control">Email</label>
+      <input class="form-control" type="email" id="email" placeholder="Email">
+    </div>
+    <div class="form-group col-md-10">
+      <label class="label-control">Mobile</label>
+      <input class="form-control" type="mobile" id="mobile" placeholder="Mobile">
+    </div>
+    <div class="form-group col-md-10">
+      <input class="form-control" type="file" id="file">
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-primary btn-lg">Upload</button>
+    </div>
+  </div>
+
+  <div id="recommend-dialog">
+
+    <div class="form-group col-md-10">
+      <label class="label-control">Manager</label>
+      <select class="form-control" multiple>
+        <option>Li Fang</option>
+        <option>Jake Li</option>
+      </select>
+    </div>
+
+    <div class="col-md-4">
+      <button class="btn btn-primary btn-lg">Recommend</button>
+    </div>
+
+  </div>
+
+  <div id="reserve-dialog">
+    <p>When reserving a candidate, other hiring managers will be denied access until you've released the candidate.</p>
+    <input type="checkbox">
+    <label>Don't show this dialog again.</label>
+  </div>
+
+</body>
+
+</html>
+

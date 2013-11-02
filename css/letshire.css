@@ -13,6 +13,20 @@ a:hover {
 
 /* custom */
 
+.req {
+  border: 1px solid #dddddd;
+  padding: 5px;
+  margin:  1px;
+  border-radius: 5px;
+  //display: block;
+  //float: left;
+}
+
+.ptext {
+  margin-left: 5px;
+  color: #005994;
+}
+
 .gauge {
   width: auto;
   height: auto;

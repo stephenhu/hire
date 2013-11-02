@@ -16,3 +16,9 @@ function recommendDialog() {
 
 } // recommendDialog
 
+function reserveDialog() {
+
+  $("#reserve-dialog").dialog("open");
+
+} // reserveDialog
+
