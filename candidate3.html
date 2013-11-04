@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- manager view -->
+<head>
+  <title>Letshire</title>
+  <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="css/letshire.css" rel="stylesheet"/>
+  <link href="jquery/themes/start/jquery-ui.css" rel="stylesheet"/>
+  <script src="jquery/jquery-1.10.2.js"></script>
+  <script src="jquery/ui/jquery.ui.core.js"></script>
+  <script src="jquery/ui/jquery.ui.widget.js"></script>
+  <script src="jquery/ui/jquery.ui.mouse.js"></script>
+  <script src="jquery/ui/jquery.ui.button.js"></script>
+  <script src="jquery/ui/jquery.ui.draggable.js"></script>
+  <script src="jquery/ui/jquery.ui.position.js"></script>
+  <script src="jquery/ui/jquery.ui.resizable.js"></script>    
+  <script src="jquery/ui/jquery.ui.dialog.js"></script>
+  <script src="jquery/ui/jquery.ui.effect.js"></script>
+  <script src="js/letshire.js"></script>
+
+  <script>
+
+    $(function() {
+      $("#resume-dialog").dialog({
+        autoOpen: false,
+        height: 450,
+        width: 400,
+        title: "Add Resume",
+        modal: true
+      });
+
+      $("#recommend-dialog").dialog({
+        autoOpen: false,
+        height: 275,
+        width: 400,
+        title: "Recommend Candidate",
+        modal: true
+      });
+
+      $("#reserve-dialog").dialog({
+        autoOpen: false,
+        height: 230,
+        width: 400,
+        title: "Warning",
+        modal: true
+      });
+
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="navbar navbar-default navbar-static-top">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Letshire!</a>
+    </div>
+
+  </div>
+
+  <div class="container">
+
+    <button class="btn btn-default pull-right" onclick="goUrl('home5.html'); return false;">Back to Summary</button>
+
+    <div class="row">
+
+      <h1>John Smith <span class="label label-success">Pipeline</span></h1>
+
+      <br>
+
+      <ul class="col-md-4 list-group">
+
+        <li class="list-group-item">
+          <span class="label label-success">6.5</span>
+          Overall
+        </li>
+        <li class="list-group-item">
+          <span class="label label-warning">5.5</span>
+          English
+        </li>
+        <li class="list-group-item">
+          <span class="label label-success">8.0</span>
+          Relevance
+        </li>
+        <li class="list-group-item">
+          <span class="label label-primary">6.2</span>
+          Smart
+        </li>
+        <li class="list-group-item">
+          <span class="label label-default">5.5</span>
+          Programming
+        </li>
+        <li class="list-group-item">
+          <span class="label label-danger">4.5</span>
+          Computer Science
+        </li>
+        <li class="list-group-item">
+          <span class="label label-primary">6.7</span>
+          Systems
+        </li>
+        <li class="list-group-item">
+          <span class="label label-primary">6.3</span>
+          Fit
+        </li>
+        <li class="list-group-item">
+          <span class="label label-success">9.9</span>
+          Motivation
+        </li>
+
+      </ul>
+
+      <div class="col-md-6">
+        <h3><small>Company:</small> Cisco</h3>
+        <h3><small>Email:</small> <a href="mailto:john.smith@gmail.com">john.smith@gmail.com</a></h3>
+        <h3><small>Phone:</small> 18023630999</h3>
+        <br><br>
+        <a href=""><span class="glyphicon glyphicon-file"></span></a>
+        <a href=""><span class="glyphicon glyphicon-file"></span></a>
+        <a href=""><span class="glyphicon glyphicon-picture"></span></a>
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="row">
+
+      <div class="col-lg-12 comment">
+
+        <div class="media">
+          <img class="media-object pull-left" src="images/glyphicons_003_user.png" width="48">
+          <div class="media-body">
+            <h4 class="media-heading">Nov 1, 2013 10:16</h4>
+            <p>This candidate could not clearly articulate the atoi function in English,
+            attached is his code sample</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-12 comment">
+
+        <div class="media">
+          <img class="media-object pull-left" src="images/glyphicons_003_user.png" width="48">
+          <div class="media-body">
+            <h4 class="media-heading">Nov 3, 2013 17:20</h4>
+            <p>I thought the candidate was smart overall, but lacked some valid experience,
+            he was quick on the reply, but often times wrong, so i had to set him on the right
+            path a few times.  I think he can learn quickly and shows a lot of passion by working
+            on some projects on his personal time, like an iphone app.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-12 comment">
+
+        <div class="media">
+          <img class="media-object pull-left" src="images/glyphicons_003_user.png" width="48">
+          <div class="media-body">
+            <h4 class="media-heading">Nov 5, 2013 13:33</h4>
+            <p>This candidate could not clearly articulate the atoi function in English,
+            attached is his code sample</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="resume-dialog">
+    <div class="form-group col-md-8">
+      <label class="label-control">Full Name</label>
+      <input class="form-control" id="fullname" placeholder="Full Name">
+    </div>
+    <div class="form-group col-md-10">
+      <label class="label-control">Email</label>
+      <input class="form-control" type="email" id="email" placeholder="Email">
+    </div>
+    <div class="form-group col-md-10">
+      <label class="label-control">Mobile</label>
+      <input class="form-control" type="mobile" id="mobile" placeholder="Mobile">
+    </div>
+    <div class="form-group col-md-10">
+      <input class="form-control" type="file" id="file">
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-primary btn-lg">Upload</button>
+    </div>
+  </div>
+
+  <div id="recommend-dialog">
+
+    <div class="form-group col-md-10">
+      <label class="label-control">Manager</label>
+      <select class="form-control" multiple>
+        <option>Li Fang</option>
+        <option>Jake Li</option>
+      </select>
+    </div>
+
+    <div class="col-md-4">
+      <button class="btn btn-primary btn-lg">Recommend</button>
+    </div>
+
+  </div>
+
+  <div id="reserve-dialog">
+    <p>When reserving a candidate, other hiring managers will be denied access until you've released the candidate.</p>
+    <input type="checkbox">
+    <label>Don't show this dialog again.</label>
+  </div>
+
+</body>
+
+</html>
+
