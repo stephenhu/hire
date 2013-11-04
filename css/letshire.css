@@ -59,6 +59,10 @@ a:hover {
   padding: 1px;
 }
 
+.lg {
+  font-size: 24px;
+}
+
 .bg {
   padding: 0px;
   margin: 0px;
@@ -86,16 +90,18 @@ a:hover {
 /* bootstrap overrides */
 
 .navbar {
-  background-color: #3973ac;
+  //background-color: #3973ac;
+  background-color: #ffffff;
   opacity: 1;
 }
 
 .navbar-default .navbar-brand {
-  color: #ffffff;
+  color: #005994;
 }
 
 .navbar-default .navbar-brand:hover {
-  color: #00ff00;
+  //color: #00ff00;
+  color: #dddddd;
 }
 
 .navbar-nav {

@@ -22,7 +22,6 @@ download all dependencies.
 
 ```
 hire
-|
 |-- bootstrap
 |-- config.ru
 |-- css
@@ -30,5 +29,4 @@ hire
 |-- images
 |-- jquery
 |-- js
-|
 ```
