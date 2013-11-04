@@ -22,3 +22,9 @@ function reserveDialog() {
 
 } // reserveDialog
 
+function goUrl(address) {
+
+  window.location = address;
+
+} // goUrl
+

@@ -63,7 +63,7 @@
 
   <div class="container">
 
-    <button class="btn btn-default pull-right">Back to Summary</button>
+    <button class="btn btn-default pull-right" onclick="goUrl('home5.html'); return false;">Back to Summary</button>
 
     <div class="row">
 
@@ -72,9 +72,9 @@
       <div class="col-lg-12">
 
         <ul class="nav nav-tabs">
-          <li class="active"><a href="">Pipeline</a></li>
-          <li><a href="">Rejected</a></li>
-          <li><a href="">Offers</a></li>
+          <li><a href="req.html">Pipeline</a></li>
+          <li><a href="req2.html">Rejected</a></li>
+          <li class="active"><a href="">Offers</a></li>
         </ul>
 
       </div>
@@ -91,7 +91,7 @@
         <th>Email</th>
         <th>Phone</th>
         <th>Rating</th>
-        <th></th>
+        <th>Summary</th>
         <th></th>
         <tr>
           <td>John Smith</td>
@@ -99,14 +99,10 @@
           <td>john.smith@gmail.com</td>
           <td>13723341098</td>
           <td><button class="btn btn-danger btn-xs">4.8</span></td>
+          <td>Onboard Dec 2, 2013</td>
           <td>
             <a href=""><img src="images/glyphicons_062_paperclip.png"></a>
             <a href=""><img src="images/glyphicons_244_conversation.png"></a>
-          </td>
-          <td>
-            <button class="btn btn-primary btn-xs">Delegate</button>
-            <button class="btn btn-danger btn-xs">Reject</button>
-            <button class="btn btn-success btn-xs">Make Offer</button>
           </td>
         </tr>
         <tr>
@@ -115,14 +111,10 @@
           <td>janed@gmail.com</td>
           <td>18088200977</td>
           <td><button class="btn btn-warning btn-xs">6.3</span></td>
+          <td>Rejected Offer</td>
           <td>
             <a href=""><img src="images/glyphicons_062_paperclip.png"></a>
             <a href=""><img src="images/glyphicons_244_conversation.png"></a>
-          </td>
-          <td>
-            <button class="btn btn-primary btn-xs">Delegate</button>
-            <button class="btn btn-danger btn-xs">Reject</button>
-            <button class="btn btn-success btn-xs">Make Offer</button>
           </td>
         </tr>
         <tr>
@@ -131,14 +123,10 @@
           <td>maoc@163.com</td>
           <td>15823383021</td>
           <td><button class="btn btn-info btn-xs">7.5</span></td>
+          <td>Onboard Jan 1, 2013</td>
           <td>
             <a href=""><img src="images/glyphicons_062_paperclip.png"></a>
             <a href=""><img src="images/glyphicons_244_conversation.png"></a>
-          </td>
-          <td>
-            <button class="btn btn-primary btn-xs">Delegate</button>
-            <button class="btn btn-danger btn-xs">Reject</button>
-            <button class="btn btn-success btn-xs">Make Offer</button>
           </td>
         </tr>
     </table>
