@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- manager view -->
+<!-- recruiter view -->
 <head>
   <title>Letshire</title>
   <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
@@ -37,14 +37,6 @@
         modal: true
       });
 
-      $("#reserve-dialog").dialog({
-        autoOpen: false,
-        height: 230,
-        width: 400,
-        title: "Warning",
-        modal: true
-      });
-
     });
 
   </script>
@@ -63,66 +55,78 @@
 
   <div class="container">
 
-    <button class="btn btn-default pull-right" onclick="goUrl('home5.html'); return false;">Back to Summary</button>
-
     <div class="row">
-
-      <h1>Nimbus Sr. MTS <span class="label label-success">6</span></h1>
-
       <div class="col-lg-12">
-
-        <ul class="nav nav-tabs">
-          <li><a href="req.html">Pipeline</a></li>
-          <li class="active"><a href="">Rejected</a></li>
-          <li><a href="req3.html">Offers</a></li>
-        </ul>
+        <a class="gauge" href="">
+          <div class="value">2,304</div>
+          <div class="key">RESUMES</div>
+        </a>
+        <a class="gauge" href="">
+          <div class="value">203</div>
+          <div class="key">HIRED</div>
+        </a>
+        <a class="gauge" href="">
+          <div class="value">12</div>
+          <div class="key">OPEN</div>
+        </a>
 
       </div>
-
     </div>
 
-    <br>
+    <br><br>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="nav nav-tabs">
+          <li><a href="home3.html">Open</a></li>
+          <li class="active"><a href="home2.html">Resumes</a></li>
+        </ul>
+      </div>
+    </div>
 
     <div class="row">
 
       <table class="table table-striped table-hover">
-        <th>Name</th>
+        <th></th>
+        <th>Candidate</th>
         <th>Company</th>
         <th>Email</th>
-        <th>Phone</th>
+        <th>Mobile</th>
+        <th>Created</th>
+        <th>Status</th>
         <th>Rating</th>
         <th></th>
         <tr>
-          <td><a href="candidate3.html">John Smith</a></td>
-          <td>Cisco</td>
-          <td><a href="mailto:john.smith@gmail.com">john.smith@gmail.com</a></td>
-          <td>13723341098</td>
-          <td><button class="btn btn-danger btn-xs">4.8</span></td>
-          <td>
-            <a href=""><img src="images/glyphicons_062_paperclip.png"></a>
-            <a href=""><img src="images/glyphicons_244_conversation.png"></a>
-          </td>
-        </tr>
-        <tr>
+          <td><input type="checkbox"></td>
           <td><a href="candidate3.html">Jane Doe</a></td>
-          <td>Baidu</td>
-          <td><a href="mailto:janed@gmail.com">janed@gmail.com</a></td>
-          <td>18088200977</td>
-          <td><button class="btn btn-warning btn-xs">6.3</span></td>
+          <td>Cisco</td>
+          <td><a href="mailto:doe@yahoo.com">doe@yahoo.com</a></td>
+          <td>+1 605 235 2352</td>
+          <td>Jan 12, 2011</td>
+          <td>Reserved by Figo Feng</td>
+          <td><button class="btn btn-warning btn-xs">6.2</button></td>
           <td>
+            <a href=""><img src="images/glyphicons_030_pencil.png"></a>
             <a href=""><img src="images/glyphicons_062_paperclip.png"></a>
             <a href=""><img src="images/glyphicons_244_conversation.png"></a>
+            <a href=""><img src="images/glyphicons_203_lock.png"></a>
+            <!--<a href=""><img src="images/glyphicons_071_book.png"></a>-->
           </td>
         </tr>
         <tr>
-          <td><a href="candidate3.html">Chen Mao</a></td>
-          <td>Intel</td>
-          <td><a href="mailto:maoc@163.com">maoc@163.com</a></td>
-          <td>15823383021</td>
-          <td><button class="btn btn-info btn-xs">7.5</span></td>
+          <td><input type="checkbox"></td>
+          <td><a href="candidate3.html">John Smith</a></td>
+          <td></td>
+          <td><a href="mailto:smith@westin.com">smith@westin.com</a></td>
+          <td>+86 132 2353 4230</td>
+          <td>Apr 23, 2004</td>
+          <td>-</td>
+          <td><button class="btn btn-danger btn-xs">4.8</button></td>
           <td>
+            <a href=""><img src="images/glyphicons_030_pencil.png"></a>
             <a href=""><img src="images/glyphicons_062_paperclip.png"></a>
             <a href=""><img src="images/glyphicons_244_conversation.png"></a>
+            <a href=""><img src="images/glyphicons_204_unlock.png"></a>
           </td>
         </tr>
       </table>
@@ -166,12 +170,6 @@
       <button class="btn btn-primary btn-lg">Recommend</button>
     </div>
 
-  </div>
-
-  <div id="reserve-dialog">
-    <p>When reserving a candidate, other hiring managers will be denied access until you've released the candidate.</p>
-    <input type="checkbox">
-    <label>Don't show this dialog again.</label>
   </div>
 
 </body>
